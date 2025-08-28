@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+}
+
+header {
+ #3e5650;
+    background: linear-gradient(135deg, #8f8158, #5f8458);
+    color: #fff;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+header a {
+    background: #fff;
+    color: #3f855a;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+header a:hover {
+    background: #ddd;
+}
+
+#services {
+    padding: 50px 20px;
+    background: #fff;
+}
+
+#services h2 {
+    color: #3f855a;
+    margin-bottom: 20px;
+}
+
+#services ul {
+    list-style: none;
+}
+
+#services li {
+    font-size: 1.2rem;
+    padding: 10px;
+    background: #f0f0f0;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#contact {
+    background: #3f855a;
+    color: white;
+    padding: 50px 20px;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background: #fff;
+     color: #3f855a;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #ddd;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header, #services, #contact {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+header a:hover, button:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#services li:hover {
+    background: #d0e0ff;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+#chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#chatbot-header {
+    background: #3f855a;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#chatbot-messages {
+    height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#chatbot-input {
+    width: 75%;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+button {
+    width: 25%;
+    border: none;
+    padding: 10px;
+    background: #3f855a;
+    color: white;
+    cursor: pointer;
+}
+/* الوضع الليلي */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.dark-mode header {
+    background: linear-gradient(135deg, #0d0d0d, #333);
+}
+
+.dark-mode #contact {
+    background: #444;
+}
+
+.dark-mode button {
+    background: #fff;
+    color: #000;
+}
+
+.dark-mode #toggle-mode {
+    background: yellow;
+    color: black;
+}
+#chatbot-avatar {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-5px);
+    }
+}
+#moodChart {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+#points-display {
+    color: gold;
+    font-size: 24px;
+    font-weight: bold;
+}
+#mbti-display {
+    color: #4CAF50;
+    font-size: 22px;
+    font-weight: bold;
+}
